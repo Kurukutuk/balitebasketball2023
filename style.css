@@ -169,3 +169,43 @@ tr:hover {
     transform: translate(-50%, -50%);
   }
 }
+/* Media queries for screen sizes below 768px */
+@media (max-width: 767px) {
+  body {
+    overflow: auto;
+  }
+  
+  .main {
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  .button {
+    width: 200px;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 16px;
+  }
+  
+  .button-left-text {
+    font-size: 12px;
+  }
+  
+  .button-text {
+    font-size: 14px;
+  }
+  
+  .button-icon {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .banner {
+    width: 100px;
+    height: 100px;
+  }
+}
