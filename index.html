@@ -9,23 +9,182 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-      <section class="main">
+      <!-- BANNER -->
+      <section class="main active">
         <div class="background-image">
           <img src="bg.png" alt="Background Image">
-          <h1>Basketball Score Standings and Schedule</h1>
           <img src="banner.png" alt="Banner Image" class="banner">
-          <a href="#" class="button">
-            <img src="ball.png" alt="Ball Icon" class="ball-icon">
-            <h3 class="button-text">Click the ball to view standings</h3>
-          </a>
         </div>
       </section>
-      <div class="jumbotron-fluid container">
+      <div class="container-fluid">
+      <!-- STANDINGS -->
+      <section class="standings">
+        <h1 class="heading-title">Basketball Current Score Standings</h1>
+        <div class="row">
+          <div class="col-lg-4">
+            <section>
+              <h2>Midget Division Standings</h2>
+              <table class="table table-hover table-dark midget-table">
+                <tr>
+                  <th class="team-th">Team</th>
+                  <th class="team-wins">Wins</th>
+                  <th class="team-losses">Losses</th>
+                </tr>
+                <tr>
+                  <td>Core Housing</td>
+                  <td>5</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>Dulong Bulalo</td>
+                  <td>4</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>San Jose</td>
+                  <td>3</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>School Site</td>
+                  <td>2</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Looban</td>
+                  <td>2</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>Centro</td>
+                  <td>1</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>Manggahan</td>
+                  <td>0</td>
+                  <td>6</td>
+                </tr>
+              </table>
+            </section>
+          </div>
+          <div class="col-lg-4">
+            <section>
+              <h2>Junior Division Standings</h2>
+              <table class="table table-hover table-dark junior-table">
+                <tr>
+                  <th class="team-th">Team</th>
+                  <th class="team-wins">Wins</th>
+                  <th class="team-losses">Losses</th>
+                </tr>
+                <tr>
+                  <td>Centro</td>
+                  <td>4</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Dulong Bulalo</td>
+                  <td>4</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>Core Housing</td>
+                  <td>3</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>San Jose</td>
+                  <td>2</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Manggahan</td>
+                  <td>1</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>School Site</td>
+                  <td>0</td>
+                  <td>5</td>
+                </tr>
+              </table>
+            </section>
+          </div>
+          <div class="col-lg-4">
+            <section>
+              <h2>Senior Division Standings</h2>
+              <table class="table table-hover table-dark senior-table">
+                <tr>
+                  <th class="team-th">Team</th>
+                  <th class="team-wins">Wins</th>
+                  <th class="team-losses">Losses</th>
+                </tr>
+                <tr>
+                  <td>Core Housing</td>
+                  <td>7</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>Dulong Bulalo</td>
+                  <td>6</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>Manggahan</td>
+                  <td>4</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Centro</td>
+                  <td>5</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>School Site</td>
+                  <td>3</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>San Jose</td>
+                  <td>2</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>Looban</td>
+                  <td>2</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>Superstar</td>
+                  <td>2</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>Toda Site</td>
+                  <td>2</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>D' Officials</td>
+                  <td>1</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>Toda Mubb</td>
+                  <td>0</td>
+                  <td>7</td>
+                </tr>
+              </table>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCHEDULE -->
       <section>
         <div class="row">
-          <div class="col-md-6">
-            <section class="division reveal">
+          <div class="col-lg-4">
+            <!-- <section class="division reveal">
               <h2>Midget Division</h2>
               <table>
                 <tr>
@@ -49,178 +208,47 @@
                   <td>Team D</td>
                   <td>Team B</td>
                 </tr>
-                <!-- Add more rows for additional games -->
+                
               </table>
-            </section>
-          </div>
-          <div class="col-md-6">
-            <section class="standings reveal">
-              <h2>Midget Division Standings</h2>
-              <table>
-                <tr>
-                  <th>Team</th>
-                  <th>Wins</th>
-                  <th>Losses</th>
-                </tr>
-                <tr>
-                  <td>Team A</td>
-                  <td>5</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>Team B</td>
-                  <td>4</td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>Team C</td>
-                  <td>3</td>
-                  <td>3</td>
-                </tr>
-                <!-- Add more rows for additional teams -->
-              </table>
-            </section>
+            </section> -->
           </div>
         </div>
       </section>
-      <section>
-        <div class="row">
-          <div class="col-md-6">
-            <section class="division reveal">
-              <h2>Junior Division</h2>
-              <table>
-                <tr>
-                  <th>Date</th>
-                  <th>Time</th>
-                  <th>Home Team</th>
-                  <th>Away Team</th>
-                  <th>Winner</th>
-                </tr>
-                <tr>
-                  <td>October 2</td>
-                  <td>5:00 PM</td>
-                  <td>Team X</td>
-                  <td>Team Y</td>
-                  <td>Team C</td>
-                </tr>
-                <tr>
-                  <td>October 6</td>
-                  <td>6:30 PM</td>
-                  <td>Team Z</td>
-                  <td>Team W</td>
-                  <td>Team D</td>
-                </tr>
-                <!-- Add more rows for additional games -->
-              </table>
-            </section>
-          </div>
-          <div class="col-md-6">
-            <section class="standings reveal">
-              <h2>Junior Division Standings</h2>
-              <table>
-                <tr>
-                  <th>Team</th>
-                  <th>Wins</th>
-                  <th>Losses</th>
-                </tr>
-                <tr>
-                  <td>Team X</td>
-                  <td>6</td>
-                  <td>0</td>
-                </tr>
-                <tr>
-                  <td>Team Y</td>
-                  <td>5</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>Team Z</td>
-                  <td>4</td>
-                  <td>2</td>
-                </tr>
-                <!-- Add more rows for additional teams -->
-              </table>
-            </section>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="row">
-          <div class="col-md-6">
-            <section class="division reveal">
-              <h2>Senior Division</h2>
-              <table>
-                <tr>
-                  <th>Date</th>
-                  <th>Time</th>
-                  <th>Home Team</th>
-                  <th>Away Team</th>
-                  <th>Winner</th>
-                </tr>
-                <tr>
-                  <td>October 3</td>
-                  <td>8:00 PM</td>
-                  <td>Team M</td>
-                  <td>Team N</td>
-                  <td>Team E</td>
-                </tr>
-                <tr>
-                  <td>October 7</td>
-                  <td>7:00 PM</td>
-                  <td>Team P</td>
-                  <td>Team Q</td>
-                  <td>Team F</td>
-                </tr>
-                <!-- Add more rows for additional games -->
-              </table>
-            </section>
-          </div>
-          <div class="col-md-6">
-            <section class="standings reveal">
-              <h2>Senior Division Standings</h2>
-              <table>
-                <tr>
-                  <th>Team</th>
-                  <th>Wins</th>
-                  <th>Losses</th>
-                </tr>
-                <tr>
-                  <td>Team M</td>
-                  <td>3</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>Team N</td>
-                  <td>2</td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>Team P</td>
-                  <td>1</td>
-                  <td>3</td>
-                </tr>
-                <!-- Add more rows for additional teams -->
-              </table>
-            </section>
-          </div>
-        </div>
-      </section>
+      <!-- UPCOMING -->
       <section class="upcoming-matches">
         <h2>Upcoming Matches</h2>
-        <div class="match-poster">
-          <!-- Match poster for upcoming match 1 -->
+        <div class="row">
+          <div class="col-md-4">
+            <<div class="match-poster">
+              <img src="match1.jpg" alt="Match 1 Poster" width="200">
+              <h4>Team A vs. Team B</h4>
+              <p>Date: June 8, 2023</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="match-poster">
+              <img src="match1.jpg" alt="Match 1 Poster" width="200">
+              <h4>Team A vs. Team B</h4>
+              <p>Date: June 8, 2023</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="match-poster">
+              <img src="match1.jpg" alt="Match 1 Poster" width="200">
+              <h4>Team A vs. Team B</h4>
+              <p>Date: June 8, 2023</p>
+            </div>
+          </div>
         </div>
-        <div class="match-poster">
-          <!-- Match poster for upcoming match 2 -->
-        </div>
+      </section>
+      <section class="footer footer-dark">
+        
       </section>
     </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
-  <script>
-    ScrollReveal().reveal('.division, .standings', { delay: 200 });
-  </script>
+  <script> ScrollReveal().reveal('.division, .standings', { delay: 200 });</script>
 </body>
 </html>
