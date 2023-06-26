@@ -24,7 +24,7 @@
           <div class="col-lg-4">
             <section>
               <h2>Midget Division Standings</h2>
-              <table class="table table-hover table-dark midget-table">
+              <table class="table table-hover table-dark standings-table">
                 <tr>
                   <th class="team-th">Team</th>
                   <th class="team-wins">Wins</th>
@@ -71,7 +71,7 @@
           <div class="col-lg-4">
             <section>
               <h2>Junior Division Standings</h2>
-              <table class="table table-hover table-dark junior-table">
+              <table class="table table-hover table-dark standings-table">
                 <tr>
                   <th class="team-th">Team</th>
                   <th class="team-wins">Wins</th>
@@ -113,7 +113,7 @@
           <div class="col-lg-4">
             <section>
               <h2>Senior Division Standings</h2>
-              <table class="table table-hover table-dark senior-table">
+              <table class="table table-hover table-dark standings-table">
                 <tr>
                   <th class="team-th">Team</th>
                   <th class="team-wins">Wins</th>
@@ -183,37 +183,64 @@
       <!-- SCHEDULE -->
       <section>
         <div class="row">
-          <div class="col-lg-4">
-            <!-- <section class="division reveal">
+          <div class="col-md-6">
+            <section class="division reveal">
               <h2>Midget Division</h2>
-              <table>
-                <tr>
-                  <th>Date</th>
-                  <th>Time</th>
-                  <th>Home Team</th>
-                  <th>Away Team</th>
-                  <th>Winner</th>
-                </tr>
-                <tr>
-                  <td>October 1</td>
-                  <td>6:00 PM</td>
-                  <td>Team A</td>
-                  <td>Team B</td>
-                  <td>Team A</td>
-                </tr>
-                <tr>
-                  <td>October 5</td>
-                  <td>7:30 PM</td>
-                  <td>Team C</td>
-                  <td>Team D</td>
-                  <td>Team B</td>
-                </tr>
-                
-              </table>
-            </section> -->
+              <div class="table-container">
+                <table class="table-hover table-light schedule-table">
+                  <thead>
+                    <tr>
+                      <th>Date</th>
+                      <th>HOME TEAM</th>
+                      <th>AWAY TEAM</th>
+                      <th>GAME INFO</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>MAY 24, 2023</td>
+                      <td>MANGGAHAN</td>
+                      <td>SCHOOL SITE</td>
+                      <td><button onclick="showGameInfo('May24', 'MANGGAHAN', 'SCHOOL SITE', '32', '52', 'SCHOOL SITE')">View Game Info</button></td>
+                    </tr>
+                    <tr>
+                      <td>JUNE 2, 2023</td>
+                      <td>SAN JOSE</td>
+                      <td>LOOBAN</td>
+                      <td><button onclick="showGameInfo('June2', 'SAN JOSE', 'LOOBAN', '56', '37', 'SAN JOSE')">View Game Info</button></td>
+                    </tr>
+                    <tr>
+                      <td>JUNE 7, 2023</td>
+                      <td>SCHOOL SITE</td>
+                      <td>DULONG BULALO</td>
+                      <td><button onclick="showGameInfo('June7', 'SCHOOL SITE', 'DULONG BULALO', '50', '81', 'DULONG BULALO')">View Game Info</button></td>
+                    </tr>
+                    <tr>
+                      <td>JUNE 14, 2023</td>
+                      <td>LOOBAN</td>
+                      <td>CENTRO</td>
+                      <td><button onclick="showGameInfo('June14', 'LOOBAN', 'CENTRO', '37', '30', 'LOOBAN')">View Game Info</button></td>
+                    </tr>
+                    <tr>
+                      <td>JUNE 21, 2023</td>
+                      <td>DULONG BULALO</td>
+                      <td>COREHOUSING</td>
+                      <td><button onclick="showGameInfo('June21', 'DULONG BULALO', 'COREHOUSING', '61', '63', 'COREHOUSING')">View Game Info</button></td>
+                    </tr>
+                    <tr>
+                      <td>JUNE 23, 2023</td>
+                      <td>CENTRO</td>
+                      <td>MANGGAHAN</td>
+                      <td><button onclick="showGameInfo('June23', 'CENTRO', 'MANGGAHAN', '72', '42', 'CENTRO')">View Game Info</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
           </div>
         </div>
       </section>
+
       <!-- UPCOMING -->
       <section class="upcoming-matches">
         <h2>Upcoming Matches</h2>
@@ -250,5 +277,15 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script> ScrollReveal().reveal('.division, .standings', { delay: 200 });</script>
+  <script>
+    function showGameInfo(date, homeTeam, awayTeam, homeScore, awayScore, winner) {
+      // Create a card or modal to display the game info
+      // You can use any JavaScript library or framework of your choice to create the card/modal
+
+      // Example using JavaScript alert
+      confirm("Game Info:\n\nDate: " + date + "\nHome Team: " + homeTeam + "\nAway Team: " + awayTeam + "\nHome Score: " + homeScore + "\nAway Score: " + awayScore + "\nWinner: " + winner);
+    }
+  </script>
+
 </body>
 </html>
