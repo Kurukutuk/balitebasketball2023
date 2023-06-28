@@ -95,7 +95,13 @@ table th,
 table td {
   padding: 10px;
 }
-
+#footer {
+  background-color: #34495e;
+}
+.footer img {
+  max-width: 100%; /* Ensure the image does not exceed the width of the footer */
+  height: 200px; /* Maintain the aspect ratio of the image */
+}
 /* Media query for small-sized screens */
 @media (max-width: 767px) {
   table th,
