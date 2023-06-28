@@ -10,11 +10,8 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-
-
-
 section {
-  height: 100vh;
+  position: relative;
 }
 
 h1 {
@@ -38,10 +35,6 @@ h2 {
   padding-bottom: 30px;
 }
 
-
-.division, .standings, .upcoming-matches {
-  margin-top: 50px;
-}
 
 .match-poster {
   margin-bottom: 20px;
@@ -82,6 +75,8 @@ h2 {
   left: 65%;
   transform: translate(-50%, -50%);
   z-index: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .background-image .banner {
@@ -90,45 +85,88 @@ h2 {
   width: 1300px;
   height: 1300px;
 }
-
-.standings-table {
+/* Default styles for all screen sizes */
+table {
   width: 100%;
   border-collapse: collapse;
-  float: left;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  color: #ecf0f1;
-}
-.schedule-table {
-  width: 80%;
-  border-collapse: collapse;
-  float: left;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-#schedule-section {
-  align-content: center;
 }
 
-th,
-td {
-  padding: 8px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
+table th,
+table td {
+  padding: 10px;
 }
 
-/*tr:hover {
-  background-color: #f5f5f5;
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
-}*/
-@media (max-width: 768px) {
+/* Media query for small-sized screens */
+@media (max-width: 767px) {
+  table th,
+  table td {
+    padding: 5px;
+  }
+  .col-md-4 {
+        margin-bottom: 20px;
+      }
+}
+
+/* Media query for medium-sized screens */
+@media (min-width: 768px) and (max-width: 991px) {
+  table th,
+  table td {
+    padding: 8px;
+  }
   .col-md-4 {
     margin-bottom: 20px;
   }
   .banner {
-    top: 80%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 90px;
+  }
+  .background-image .banner {
+    display: block;
+    margin: 0 auto;
+    width: 1000px;
+    height: 1000px;
+  }
+}
+
+/* Media query for large-sized screens */
+@media (min-width: 992px) {
+  table th,
+  table td {
+    padding: 10px;
+  }
+  .col-md-4 {
+    margin-bottom: 20px;
+  }
+  .banner {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 90px;
+  }
+  .background-image .banner {
+    display: block;
+    margin: 0 auto;
+    width: 1300px;
+    height: 1300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 90px;
+  }
+  .background-image .banner {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
   }
 }
