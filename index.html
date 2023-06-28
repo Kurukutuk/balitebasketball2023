@@ -6,6 +6,7 @@
   <title>Basketball Score Standings and Schedule</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -181,66 +182,193 @@
       </section>
 
       <!-- SCHEDULE -->
+      
       <section>
+        <h2>Midget Division Game Schedules</h2>
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6">
-            <section class="division reveal">
-              <h2>Midget Division</h2>
-              <div class="table-container">
-                <table class="table-hover table-light schedule-table">
-                  <thead>
-                    <tr>
-                      <th>Date</th>
-                      <th>HOME TEAM</th>
-                      <th>AWAY TEAM</th>
-                      <th>GAME INFO</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>MAY 24, 2023</td>
-                      <td>MANGGAHAN</td>
-                      <td>SCHOOL SITE</td>
-                      <td><button onclick="showGameInfo('May24', 'MANGGAHAN', 'SCHOOL SITE', '32', '52', 'SCHOOL SITE')">View Game Info</button></td>
-                    </tr>
-                    <tr>
-                      <td>JUNE 2, 2023</td>
-                      <td>SAN JOSE</td>
-                      <td>LOOBAN</td>
-                      <td><button onclick="showGameInfo('June2', 'SAN JOSE', 'LOOBAN', '56', '37', 'SAN JOSE')">View Game Info</button></td>
-                    </tr>
-                    <tr>
-                      <td>JUNE 7, 2023</td>
-                      <td>SCHOOL SITE</td>
-                      <td>DULONG BULALO</td>
-                      <td><button onclick="showGameInfo('June7', 'SCHOOL SITE', 'DULONG BULALO', '50', '81', 'DULONG BULALO')">View Game Info</button></td>
-                    </tr>
-                    <tr>
-                      <td>JUNE 14, 2023</td>
-                      <td>LOOBAN</td>
-                      <td>CENTRO</td>
-                      <td><button onclick="showGameInfo('June14', 'LOOBAN', 'CENTRO', '37', '30', 'LOOBAN')">View Game Info</button></td>
-                    </tr>
-                    <tr>
-                      <td>JUNE 21, 2023</td>
-                      <td>DULONG BULALO</td>
-                      <td>COREHOUSING</td>
-                      <td><button onclick="showGameInfo('June21', 'DULONG BULALO', 'COREHOUSING', '61', '63', 'COREHOUSING')">View Game Info</button></td>
-                    </tr>
-                    <tr>
-                      <td>JUNE 23, 2023</td>
-                      <td>CENTRO</td>
-                      <td>MANGGAHAN</td>
-                      <td><button onclick="showGameInfo('June23', 'CENTRO', 'MANGGAHAN', '72', '42', 'CENTRO')">View Game Info</button></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </section>
-          </div>
-        </div>
-      </section>
+          <section class="col-md-4">
+            <div class="table-responsive">
+              <table class="table">
+                <thead class="thead-light">
+                  <tr>
+                    <th>Date</th>
+                    <th>Home Team</th>
+                    <th>Away Team</th>
+                    <th>Game Info</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>MAY 24, 2023</td>
+                    <td>MANGGAHAN</td>
+                    <td>SCHOOL SITE</td>
+                    <td><button class="btn btn-light btn-block" data-toggle="modal" data-target="#gameInfoModal" data-toggle="modal" data-target="#gameInfoModal" data-toggle="modal" data-target="#gameInfoModal" onclick="showGameInfo(0)"><i class="fa fa-eye fa" aria-hidden="true"></i></button></td>
+                  </tr>
+                  <tr>
+                    <td>MAY 24, 2023</td>
+                    <td>COREHOUSING</td>
+                    <td>LOOBAN</td>
+                    <td><button class="btn btn-light btn-block" data-toggle="modal" data-target="#gameInfoModal" onclick="showGameInfo(1)"><i class="fa fa-eye fa" aria-hidden="true"></button></td>
+                  </tr>
+                  <tr>
+                    <td>MAY 24, 2023</td>
+                    <td>CENTRO</td>
+                    <td>DULONG BULALO</td>
+                    <td><button class="btn btn-light btn-block" data-toggle="modal" data-target="#gameInfoModal" onclick="showGameInfo(2)"><i class="fa fa-eye fa" aria-hidden="true"></button></td>
+                  </tr>
+                  <tr>
+                    <td>JUNE 2, 2023</td>
+                    <td>SAN JOSE</td>
+                    <td>LOOBAN</td>
+                    <td><button class="btn btn-light btn-block" data-toggle="modal" data-target="#gameInfoModal" onclick="showGameInfo(3)"><i class="fa fa-eye fa" aria-hidden="true"></button></td>
+                  </tr>
+                  <tr>
+                    <td>JUNE 2, 2023</td>
+                    <td>MANGGAHAN</td>
+                    <td>DULONG BULALO</td>
+                    <td><button class="btn btn-light btn-block" data-toggle="modal" data-target="#gameInfoModal" onclick="showGameInfo(4)"><i class="fa fa-eye fa" aria-hidden="true"></button></td>
+                  </tr>
+                  <tr>
+                    <td>JUNE 2, 2023</td>
+                    <td>COREHOUSING</td>
+                    <td>CENTRO</td>
+                    <td><button class="btn btn-light btn-block" data-toggle="modal" data-target="#gameInfoModal" onclick="showGameInfo(5)"><i class="fa fa-eye fa" aria-hidden="true"></button></td>
+                  </tr>
+                  <tr>
+                    <td>JUNE 7, 2023</td>
+                    <td>SCHOOL SITE</td>
+                    <td>DULONG BULALO</td>
+                    <td><button class="btn btn-light btn-block" data-toggle="modal" data-target="#gameInfoModal" onclick="showGameInfo(6)"><i class="fa fa-eye fa" aria-hidden="true"></button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
 
+          <section class="col-md-4">
+            <div class="table-responsive">
+              <table class="table">
+                <thead class="thead-light">
+                  <tr>
+                    <th>Date</th>
+                    <th>Home Team</th>
+                    <th>Away Team</th>
+                    <th>Game Info</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>JUNE 7, 2023</td>
+                    <td>SAN JOSE</td>
+                    <td>CENTRO</td>
+                    <td><button class="btn btn-light btn-block" data-toggle="modal" data-target="#gameInfoModal" onclick="showGameInfo(7)"><i class="fa fa-eye fa" aria-hidden="true"></button></td>
+                  </tr>
+                  <tr>
+                    <td>JUNE 7, 2023</td>
+                    <td>MANGGAHAN</td>
+                    <td>COREHOUSING</td>
+                    <td><button class="btn btn-light btn-block" data-toggle="modal" data-target="#gameInfoModal" onclick="showGameInfo(8)"><i class="fa fa-eye fa" aria-hidden="true"></button></td>
+                  </tr>
+                  <tr>
+                    <td>JUNE 14, 2023</td>
+                    <td>LOOBAN</td>
+                    <td>CENTRO</td>
+                    <td><button class="btn btn-light btn-block" data-toggle="modal" data-target="#gameInfoModal" onclick="showGameInfo(9)"><i class="fa fa-eye fa" aria-hidden="true"></button></td>
+                  </tr>
+                  <tr>
+                    <td>JUNE 14, 2023</td>
+                    <td>SCHOOL SITE</td>
+                    <td>COREHOUSING</td>
+                    <td><button class="btn btn-light btn-block" data-toggle="modal" data-target="#gameInfoModal" onclick="showGameInfo(10)"><i class="fa fa-eye fa" aria-hidden="true"></button></td>
+                  </tr>
+                  <tr>
+                    <td>JUNE 14, 2023</td>
+                    <td>SAN JOSE</td>
+                    <td>MANGGAHAN</td>
+                    <td><button class="btn btn-light btn-block" data-toggle="modal" data-target="#gameInfoModal" onclick="showGameInfo(11)"><i class="fa fa-eye fa" aria-hidden="true"></button></td>
+                  </tr>
+                  <tr>
+                    <td>JUNE 21, 2023</td>
+                    <td>DULONG BULALO</td>
+                    <td>COREHOUSING</td>
+                    <td><button class="btn btn-light btn-block" data-toggle="modal" data-target="#gameInfoModal" onclick="showGameInfo(12)"><i class="fa fa-eye fa" aria-hidden="true"></button></td>
+                  </tr>
+                  <tr>
+                    <td>JUNE 21, 2023</td>
+                    <td>LOOBAN</td>
+                    <td>MANGGAHAN</td>
+                    <td><button class="btn btn-light btn-block" data-toggle="modal" data-target="#gameInfoModal" onclick="showGameInfo(13)"><i class="fa fa-eye fa" aria-hidden="true"></button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="col-md-4">
+            <div class="table-responsive">
+              <table class="table">
+                <thead class="thead-light">
+                  <tr>
+                    <th>Date</th>
+                    <th>Home Team</th>
+                    <th>Away Team</th>
+                    <th>Game Info</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>JUNE 21, 2023</td>
+                    <td>SCHOOL SITE</td>
+                    <td>SAN JOSE</td>
+                    <td><button class="btn btn-light btn-block" data-toggle="modal" data-target="#gameInfoModal" onclick="showGameInfo(14)"><i class="fa fa-eye fa" aria-hidden="true"></button></td>
+                  </tr>
+                  <tr>
+                    <td>JUNE 23, 2023</td>
+                    <td>CENTRO</td>
+                    <td>MANGGAHAN</td>
+                    <td><button class="btn btn-light btn-block" data-toggle="modal" data-target="#gameInfoModal" onclick="showGameInfo(15)"><i class="fa fa-eye fa" aria-hidden="true"></button></td>
+                  </tr>
+                  <tr>
+                    <td>JUNE 23, 2023</td>
+                    <td>DULONG BULALO</td>
+                    <td>SAN JOSE</td>
+                    <td><button class="btn btn-light btn-block" data-toggle="modal" data-target="#gameInfoModal" onclick="showGameInfo(16)"><i class="fa fa-eye fa" aria-hidden="true"></button></td>
+                  </tr>
+                  <tr>
+                    <td>JUNE 23, 2023</td>
+                    <td>LOOBAN</td>
+                    <td>SCHOOL SITE</td>
+                    <td><button class="btn btn-light btn-block" data-toggle="modal" data-target="#gameInfoModal" onclick="showGameInfo(17)"><i class="fa fa-eye fa" aria-hidden="true"></button></td>
+                  </tr>
+                  <tr>
+                    <td>TBA</td>
+                    <td>COREHOUSING</td>
+                    <td>SAN JOSE</td>
+                    <td><button class="btn btn-light btn-block" data-toggle="modal" data-target="#gameInfoModal" onclick="showGameInfo(18)"><i class="fa fa-eye fa" aria-hidden="true"></button></td>
+                  </tr>
+                  <tr>
+                    <td>TBA</td>
+                    <td>CENTRO</td>
+                    <td>SCHOOL SITE</td>
+                    <td><button class="btn btn-light btn-block" data-toggle="modal" data-target="#gameInfoModal" onclick="showGameInfo(19)"><i class="fa fa-eye fa" aria-hidden="true"></button></td>
+                  </tr>
+                  <tr>
+                    <td>TBA</td>
+                    <td>DULONG BULALO</td>
+                    <td>LOOBAN</td>
+                    <td><button class="btn btn-light btn-block" data-toggle="modal" data-target="#gameInfoModal" onclick="showGameInfo(20)"><i class="fa fa-eye fa" aria-hidden="true"></button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
       <!-- UPCOMING -->
       <section class="upcoming-matches">
         <h2>Upcoming Matches</h2>
@@ -272,20 +400,84 @@
         
       </section>
     </div>
+    <!-- MODAL FOR GAME INFO -->
+    <!-- Game Info Modal -->
+    <div class="modal fade" id="gameInfoModal" tabindex="-1" role="dialog" aria-labelledby="gameInfoModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="gameInfoModalLabel"><strong>BALITE BASKETBALL SUMMER LEAGUE 2K23</strong></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Date: <strong><span id="gameDate"></span></strong></li>
+              <li class="list-group-item">Home Team: <span id="homeTeam"></span></li>
+              <li class="list-group-item">Home Team Score: <span id="homeTeamScore"></span></li>
+              <li class="list-group-item">Away Team: <span id="awayTeam"></span></li>
+              <li class="list-group-item">Away Team Score: <span id="awayTeamScore"></span></li>
+              <li class="list-group-item">Winner: <strong><span id="winner"></span></strong></li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script>
+  // Array to store the game information
+    var games = [
+      ['May 24, 2023', 'MANGGAHAN', '32', 'SCHOOL SITE', '52', 'SCHOOL SITE'],
+      ['May 24, 2023', 'COREHOUSING', '48', 'LOOBAN', '43', 'COREHOUSING'],
+      ['May 24, 2023', 'CENTRO', '44', 'DULONG BULALO', '75', 'DULONG BULALO'],
+      ['June 2, 2023', 'SAN JOSE', '56', 'LOOBAN', '37', 'SAN JOSE'],
+      ['June 2, 2023', 'MANGGAHAN', '30', 'DULONG BULALO', '81', 'DULONG BULALO'],
+      ['June 2, 2023', 'COREHOUSING', '49', 'CENTRO', '37', 'COREHOUSING'],
+      ['June 7, 2023', 'SCHOOL SITE', '50', 'DULONG BULALO', '81', 'DULONG BULALO'],
+      ['June 7, 2023', 'SAN JOSE', '68', 'CENTRO', '53', 'SAN JOSE'],
+      ['June 7, 2023', 'MANGGAHAN', '41', 'COREHOUSING', '54', 'COREHOUSING'],
+      ['June 14, 2023', 'LOOBAN', '37', 'CENTRO', '30', 'LOOBAN'],
+      ['June 14, 2023', 'SCHOOL SITE', '36', 'COREHOUSING', '64', 'COREHOUSING'],
+      ['June 14, 2023', 'SAN JOSE', '70', 'MANGGAHAN', '40', 'SAN JOSE'],
+      ['June 21, 2023', 'DULONG BULALO', '61', 'COREHOUSING', '63', 'COREHOUSING'],
+      ['June 21, 2023', 'LOOBAN', '54', 'MANGGAHAN', '39', 'LOOBAN'],
+      ['June 21, 2023', 'SCHOOL SITE', '', 'SAN JOSE', '', ''],
+      ['June 23, 2023', 'CENTRO', '72', 'MANGGAHAN', '42', 'CENTRO'],
+      ['June 23, 2023', 'DULONG BULALO', '64', 'SAN JOSE', '59', 'DULONG BULALO'],
+      ['June 23, 2023', 'LOOBAN', '49', 'SCHOOL SITE', '58', 'SCHOOL SITE'],
+      ['TBA', 'COREHOUSING', '', 'SAN JOSE', '', ''],
+      ['TBA', 'CENTRO', '', 'SCHOOL SITE', '', ''],
+      ['TBA', 'DULONG BULALO', '', 'LOOBAN', '', '']
+    ];
+
+
+    function showGameInfo(index) {
+      var game = games[index];
+      var date = game[0];
+      var homeTeam = game[1];
+      var homeScore = game[2];
+      var awayTeam = game[3];
+      var awayScore = game[4];
+      var winner = game[5];
+
+      // Display the game info in your modal or card
+      // Populate the game information in the modal
+      document.getElementById('gameDate').textContent = date;
+      document.getElementById('homeTeam').textContent = homeTeam;
+      document.getElementById('homeTeamScore').textContent = homeScore;
+      document.getElementById('awayTeam').textContent = awayTeam;
+      document.getElementById('awayTeamScore').textContent = awayScore;
+      document.getElementById('winner').textContent = winner;
+    }
+  </script>  
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script> ScrollReveal().reveal('.division, .standings', { delay: 200 });</script>
-  <script>
-    function showGameInfo(date, homeTeam, awayTeam, homeScore, awayScore, winner) {
-      // Create a card or modal to display the game info
-      // You can use any JavaScript library or framework of your choice to create the card/modal
-
-      // Example using JavaScript alert
-      confirm("Game Info:\n\nDate: " + date + "\nHome Team: " + homeTeam + "\nAway Team: " + awayTeam + "\nHome Score: " + homeScore + "\nAway Score: " + awayScore + "\nWinner: " + winner);
-    }
-  </script>
-
 </body>
 </html>
